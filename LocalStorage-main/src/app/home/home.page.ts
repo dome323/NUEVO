@@ -9,6 +9,7 @@ import { LoaderService } from '../Services/loader.service';
   standalone: true,
   imports: [IonicModule,FormsModule,ReactiveFormsModule],
 })
+
 export class HomePage {
 
   receivetext:string;

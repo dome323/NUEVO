@@ -1,48 +1,73 @@
-#container {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 10%;
-  transform: translateY(-50%);
-
+ion-header {
+  ion-toolbar {
+    --background: #a2ead3;
+    --color: #000000;
+    ion-title {
+      font-size: 24px;
+      font-family: Arial, sans-serif;
+      color: #000000;
+      &.custom-color {
+        color: #e0a2a2;
+      }
+    }
+  }
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-content {
+  --background: #c38989;
+  ion-label {
+    font-size: 16px;
+    color: #5a37b5;
+    margin-bottom: 8px;
+  }
+  input[type="text"] {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    width: 100%;
+  }
 }
 
-#container p {
-  font-size: 20px;
-  line-height: 45px;
-
-  color: #fafafa;
-  width: 80%;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
 #boton {
-  display: flex; /* convierte el contenedor en un contenedor flexible */
-  justify-content: center; /* centra horizontalmente el contenido */
-  align-items: center; /* centra verticalmente el contenido */
-  height: 10vh; /* establece la altura del contenedor al 100% del viewport */
-
-  background-color: #d4a9e0; /* cambia el color de fondo del contenedor */
+  margin-top: 16px;
+  ion-button {
+    --background: #9168bb;
+    --border-radius: 24px;
+    --padding-top: 12px;
+    --padding-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f22c3;
+    text-transform: uppercase;
+    &:hover {
+      --background: #000000;
+    }
+  }
 }
 
-button, ion-button {
-  background-color: #d4a9e0; /* cambia el color de fondo del botón */
-  color: white; /* cambia el color de texto del botón a blanco */
+ion-content {
+  background-image: url('https://i.pinimg.com/564x/89/bc/d8/89bcd80e64b04710b77a37decb4d7abf.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-#background-image {
-  background: transparent url('https://i.ytimg.com/vi/kCahllGu7UE/maxresdefault.jpg') no-repeat center center / cover;
-  background: var(--background);
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

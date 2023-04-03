@@ -1,43 +1,62 @@
+
 <ion-header>
   <ion-toolbar>
-    <ion-title>
+    <ion-title class="ion-text-center">
       Testing - Add LocalStorage
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content color="tertiary"  class="background-image" > 
+<ion-content [fullscreen]="true"  class="ion-text-center ion-align-items-center" class="ion-text-center" color="dark" class="center-content"> <h1> Tu cancion Favorita  </h1>
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title font-family="Arial, sans-serif" class="custom-color" size="medium">
+      <ion-title size="medium">
         Testing - Add LocalStorage
+      
       </ion-title>
-      <h1>Datos Personales</h1>
     </ion-toolbar>
   </ion-header>
 
-
-
-  <div id="container"> 
-    <p>Ingrese el nombre :</p> 
-    <ion-label>{{ recovertext }}</ion-label>
-    <input type="text" [(ngModel)]="receivetext">
- 
-    <p>Ingrese el apellido :</p> 
-    <ion-label>{{ recovertext }}</ion-label>
-    <input type="text" [(ngModel)]="receivetext">
-
-    <p>Ingrese su edad :</p> 
-    <ion-label>{{ recovertext }}</ion-label>
-    <input type="text" [(ngModel)]="receivetext">
-
-    <p>Ingrese su direccion :</p> 
-    <ion-label>{{ recovertext }}</ion-label>
-    <input type="text" [(ngModel)]="receivetext">
+  <div class="ion-text-center" id="container" style="display: flex; flex-direction: column; justify-content: center; align-items: center;"> 
+    <ion-label color="light">{{ recovertext }}</ion-label>
+    <ion-input [(ngModel)]="receivetext" placeholder="Type here"></ion-input>
   </div>
 
-</ion-content>
+  <div class="center-container"  class="ion-text-center" style="display: flex; justify-content: center; align-items: center;" id="boton">
+    <ion-button color="tertiary" shape="round" size="large" expand="full" (click)="print()">Enter</ion-button>
+  </div>
+  <h2>Hora y Fecha: </h2>
+  <ion-datetime-button datetime="datetime"></ion-datetime-button>
+<ion-modal [keepContentsMounted]="true"> 
+<ng-template>
+  <ion-datetime id="datetime"></ion-datetime>
+</ng-template>
+</ion-modal>
+<h2>Notificaciones: </h2>
+<ion-list>
+  <ion-item>
+    <ion-label>Followers</ion-label>
+    <ion-badge color="primary">22k</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Likes</ion-label>
+    <ion-badge color="secondary">118k</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Stars</ion-label>
+    <ion-badge color="tertiary">34k</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Completed</ion-label>
+    <ion-badge color="success">80</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Warnings</ion-label>
+    <ion-badge color="warning">70</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Notifications</ion-label>
+    <ion-badge color="danger">1000</ion-badge>
+  </ion-item>
+</ion-list>
 
-<div id="boton">
-  <ion-button  color="#9168bb" size="large" shape="round" expand="full" (click)="print()">Enter</ion-button>
-</div>
+</ion-content>
