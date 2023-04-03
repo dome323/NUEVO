@@ -1,0 +1,48 @@
+#container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10%;
+  transform: translateY(-50%);
+
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 20px;
+  line-height: 45px;
+
+  color: #fafafa;
+  width: 80%;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+#boton {
+  display: flex; /* convierte el contenedor en un contenedor flexible */
+  justify-content: center; /* centra horizontalmente el contenido */
+  align-items: center; /* centra verticalmente el contenido */
+  height: 10vh; /* establece la altura del contenedor al 100% del viewport */
+
+  background-color: #d4a9e0; /* cambia el color de fondo del contenedor */
+}
+
+button, ion-button {
+  background-color: #d4a9e0; /* cambia el color de fondo del botón */
+  color: white; /* cambia el color de texto del botón a blanco */
+}
+
+#background-image {
+  background: transparent url('https://i.ytimg.com/vi/kCahllGu7UE/maxresdefault.jpg') no-repeat center center / cover;
+  background: var(--background);
+}
+

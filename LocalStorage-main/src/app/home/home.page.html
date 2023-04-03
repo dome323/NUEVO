@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Testing - Add LocalStorage
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="tertiary"  class="background-image" > 
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title font-family="Arial, sans-serif" class="custom-color" size="medium">
+        Testing - Add LocalStorage
+      </ion-title>
+      <h1>Datos Personales</h1>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+  <div id="container"> 
+    <p>Ingrese el nombre :</p> 
+    <ion-label>{{ recovertext }}</ion-label>
+    <input type="text" [(ngModel)]="receivetext">
+ 
+    <p>Ingrese el apellido :</p> 
+    <ion-label>{{ recovertext }}</ion-label>
+    <input type="text" [(ngModel)]="receivetext">
+
+    <p>Ingrese su edad :</p> 
+    <ion-label>{{ recovertext }}</ion-label>
+    <input type="text" [(ngModel)]="receivetext">
+
+    <p>Ingrese su direccion :</p> 
+    <ion-label>{{ recovertext }}</ion-label>
+    <input type="text" [(ngModel)]="receivetext">
+  </div>
+
+</ion-content>
+
+<div id="boton">
+  <ion-button  color="#9168bb" size="large" shape="round" expand="full" (click)="print()">Enter</ion-button>
+</div>
